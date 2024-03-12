@@ -15,7 +15,7 @@ TFT_eSPI tft = TFT_eSPI();
 TFT_eSprite sprite = TFT_eSprite(&tft);
 TFT_eSprite animat = TFT_eSprite(&tft);
 
-const char* apiKey = "cee8677874679b33b7d2488b99073587"; // OpenWeatherMap API key
+const char* apiKey = "YourAPIKey"; // OpenWeatherMap API key
 const unsigned long weatherUpdateInterval = 60000; // Update weather every 1 minute
 
 // Define a structure for city data
