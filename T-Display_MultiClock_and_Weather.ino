@@ -154,7 +154,7 @@ void display_Time_and_Weather() {
         uint32_t raw = analogRead(PIN_BAT_VOLT);
         uint32_t voltage = esp_adc_cal_raw_to_voltage(raw, &adc_chars) * 2; 
         int batteryLevel = map(voltage, 3300, 4095, 0, 100); // Map voltage range to 0-100%
-        int fillWidth = map(batteryLevel, 0, 100, 0, 30); // Map battery level to fill width
+        int fillWidth = map(batteryLevel, 0, 100, 0, 20); // Map battery level to fill width
         
         // Create URL for weather API request
         char url[128];
